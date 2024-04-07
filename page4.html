@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<title>Php Converter</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="
+		width=device-width, initial-scale=1">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+		<style>
+			body{
+			background-image: url(pink.jpg);
+			background-size: 100%;
+			}
+
+			#converter{
+				font-size: 50px;
+				text-align: center;
+				margin-top: 60px;
+			}
+		</style>
+
+	<!--START OF THE BODY-->
+	<body>
+
+		<img src="money.png" class="img-fluid mx-auto d-block" style="width: 230px; margin-top:20px">
+
+		<h1 style="text-align: center; color: rgba(193, 8, 45, 0.8);">The equivalent amount of 100 <br> pesos in Yen is</h1>
+
+
+		<p id="converter"></p>
+
+		<script>
+			let peso, yen, amount; // Declare 3 variables
+			peso = 100; // Assign the value 100 to peso
+			yen = 2.68; // Assign the value 0.65 to yen  
+			amount = peso * yen; // Assign the quotient of peso and yen to amount  
+			document.getElementById("converter").innerHTML = "<kbd>" + amount + "</kbd>";
+		</script> <!--Like a calculator, the sum, difference, etc. will be seen in the website-->
+
+	<div class="d-flex justify-content-center" style="margin-top:50px;">
+		<a href="index.html"><button class="btn btn-danger btn-lg">Back to Main Page</button></a>
+	</div>
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" interity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+	<!--END OF THE BODY-->
+</html>
